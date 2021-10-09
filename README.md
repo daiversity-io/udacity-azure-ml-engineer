@@ -32,7 +32,7 @@ A Logistic Regression model was first created and trained using Scikit-learn in 
 
 - The trained model is then saved
 
-The model had parameters of C = 0.1 and max_iter = 100, and achieved an accuracy of 91.43%
+The model had parameters of C = 0.1 and max_iter = 100, and achieved an accuracy of 91.79%
 
 ### Hyper Drive
 
