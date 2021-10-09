@@ -54,7 +54,7 @@ Elaborating more on the second step in configuring the Hyperdrive, there are two
 
 - C: 0.01,0.1,10,100
 
-- max_iter: 50,100,150,200
+- max_iter: 50,100,150,200,300
 
 **BanditPolicy** is an early termination policy that terminates runs early if they are not achieving the same performance as the best model. This also adds to improving computational efficiency and saving time as it automatically terminates models with a poor performance.
 
