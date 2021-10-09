@@ -11,7 +11,7 @@ This project uses data from direct marketing campaigns of a Portuguese banking i
 The aim of the algorithms built using the Python SDK (w/ Hyperdrive) and AutoML is to accurately predict if a potential client will subscribe to the bank's term deposit. This is to assist in targeting resources in approaching clients that are most likely to subscribe.
 
 The best performing model was found using the AutoML run and was a Voting Ensemble model with an accuracy of 91.642%. 
-https://github.com/daiversity-io/udacity-azure-ml-engineer-project-1/blob/9732c7935af03290ad7ef7a07779e07abe218d07/images/Screen%20Shot%202021-10-09%20at%208.52.40%20AM.png
+<img src='https://github.com/daiversity-io/udacity-azure-ml-engineer-project-1/blob/9732c7935af03290ad7ef7a07779e07abe218d07/images/Screen%20Shot%202021-10-09%20at%208.52.40%20AM.png'>
 
 However, the Logistic classifier trained using Hyperdrive had an accuracy of 91.44% which is very close to the accuracy of that achieved by the Voting Ensemble model.
 
