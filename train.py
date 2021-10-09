@@ -33,30 +33,6 @@ def clean_data(data):
     contact = pd.get_dummies(x_df.contact, prefix="contact")
     x_df.drop("contact", inplace=True, axis=1)
     x_df = x_df.join(contact)
-    
-    Welcome to Azure Machine Learning Terminal
-
-Type "git clone [url]" to clone a repo                      
-Type "git --help" to learn about Git CLI                
-Type "az ml --help" to learn about Azure ML CLI           
-
-
-azureuser@azure-project1:~/cloudfiles/code/Users/odl_user_160514$ python train.py 
-Attempted to log scalar metric Regularization Strength::
-1.0
-Attempted to log scalar metric Max iterations::
-100
-/anaconda/envs/azureml_py38/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:938: ConvergenceWarning: lbfgs failed to converge (status=1):
-STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-
-Increase the number of iterations (max_iter) or scale the data as shown in:
-    https://scikit-learn.org/stable/modules/preprocessing.html
-Please also refer to the documentation for alternative solver options:
-    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-  n_iter_i = _check_optimize_result(
-Attempted to log scalar metric Accuracy:
-0.9179059180576631
-azureuser@azure-project1:~/cloudfiles/code/Users/odl_user_160514$ 
     education = pd.get_dummies(x_df.education, prefix="education")
     x_df.drop("education", inplace=True, axis=1)
     x_df = x_df.join(education)
