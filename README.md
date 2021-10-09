@@ -13,7 +13,7 @@ The aim of the algorithms built using the Python SDK (w/ Hyperdrive) and AutoML 
 The best performing model was found using the AutoML run and was a Voting Ensemble model with an accuracy of 91.642%. 
 <img src='https://github.com/daiversity-io/udacity-azure-ml-engineer-project-1/blob/9732c7935af03290ad7ef7a07779e07abe218d07/images/Screen%20Shot%202021-10-09%20at%208.52.40%20AM.png'>
 
-However, the Logistic classifier trained using Hyperdrive had an accuracy of 91.44% which is very close to the accuracy of that achieved by the Voting Ensemble model.
+However, the Logistic classifier trained using Hyperdrive had an accuracy of 91.79% which is very close to the accuracy of that achieved by the Voting Ensemble model.
 <img src='https://github.com/daiversity-io/udacity-azure-ml-engineer-project-1/blob/55c4a0df14e5df074cb7687039645920777b027b/images/Screen%20Shot%202021-10-09%20at%209.31.59%20AM.png'>
 
 ## Scikit-learn and Hyperdrive Pipeline
