@@ -60,6 +60,8 @@ Elaborating more on the second step in configuring the Hyperdrive, there are two
 
 The best model had parameters of C = 10 and max_iter = 50, and achieved an accuracy of 91.642%.
 
+<img src='https://github.com/daiversity-io/udacity-azure-ml-engineer-project-1/blob/56fc56999c25611fc22cec442ac9a12277656ed8/images/Screen%20Shot%202021-10-09%20at%208.52.04%20AM.png'>
+
 ## AutoML
 
 The steps taken to implement AutoML were as follows:
