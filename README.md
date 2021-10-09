@@ -69,7 +69,7 @@ The steps taken to implement AutoML were as follows:
 - AutoML was configured and a run was submitted to find the model with the best performance
 - The best model was saved
 
-The best performing model was a Voting Ensemble model with an accuracy of 91.78%. The hyper parameters of the model were as follows:
+The best performing model was a Voting Ensemble model with an accuracy of 91.642%. The hyper parameters of the model were as follows:
 
 - max_iter = 100
 - multi_class = ovr
@@ -80,6 +80,16 @@ The best performing model was a Voting Ensemble model with an accuracy of 91.78%
 - tol = 0.0001
 - verbose = 0
 - warm_start = False
+
+The below snapshots gives the explanation of the best model prediction by highlighting feature importance values and discovering patterns in data at training time. It also shows differnt metrics and their value for model interpretability and explanation
+
+<img src='https://github.com/daiversity-io/udacity-azure-ml-engineer-project-1/blob/063eaad492d93449196f4e9bccad253d629c4c95/images/Screen%20Shot%202021-10-09%20at%208.58.25%20AM.png'>
+
+<img src='https://github.com/daiversity-io/udacity-azure-ml-engineer-project-1/blob/063eaad492d93449196f4e9bccad253d629c4c95/images/Screen%20Shot%202021-10-09%20at%209.04.03%20AM.png'>
+
+<img src='https://github.com/daiversity-io/udacity-azure-ml-engineer-project-1/blob/063eaad492d93449196f4e9bccad253d629c4c95/images/Screen%20Shot%202021-10-09%20at%209.04.39%20AM.png'>
+
+<img src='https://github.com/daiversity-io/udacity-azure-ml-engineer-project-1/blob/063eaad492d93449196f4e9bccad253d629c4c95/images/Screen%20Shot%202021-10-09%20at%209.05.47%20AM.png'>
 
 More on voting classifiers can be found in the following links:
 
