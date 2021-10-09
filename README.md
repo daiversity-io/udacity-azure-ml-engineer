@@ -91,6 +91,8 @@ The below snapshots gives the explanation of the best model prediction by highli
 
 <img src='https://github.com/daiversity-io/udacity-azure-ml-engineer-project-1/blob/063eaad492d93449196f4e9bccad253d629c4c95/images/Screen%20Shot%202021-10-09%20at%209.04.39%20AM.png'>
 
+<img src='https://github.com/daiversity-io/udacity-azure-ml-engineer-project-1/blob/e27a20c56921b90b2913baf3ad971d59544c9ea9/images/Screen%20Shot%202021-10-09%20at%208.58.48%20AM.png'>
+
 <img src='https://github.com/daiversity-io/udacity-azure-ml-engineer-project-1/blob/063eaad492d93449196f4e9bccad253d629c4c95/images/Screen%20Shot%202021-10-09%20at%209.05.47%20AM.png'>
 
 More on voting classifiers can be found in the following links:
