@@ -1,3 +1,56 @@
+
+- C: 0.01,0.1,10,100
+
+- max_iter: 50,100,150,200
+
+**BanditPolicy** is an early termination policy that terminates runs early if they are not achieving the same performance as the best model. This also adds to improving computational efficiency and saving time as it automatically terminates models with a poor performance.
+
+The best model had parameters of C = 10 and max_iter = 50, and achieved an accuracy of 91.44%.
+
+## AutoML
+
+The steps taken to implement AutoML were as follows:
+
+- Import the banking dataset using Azure TabularDataset Factory
+- Data is then cleaned and transformed using the cleaning function in train.py
+- AutoML was configured and a run was submitted to find the model with the best performance
+- The best model was saved
+
+The best performing model was a Voting Ensemble model with an accuracy of 91.78%. The hyper parameters of the model were as follows:
+
+- max_iter = 100
+- multi_class = ovr
+- n_jobs = 1
+- penalty = 12
+- random_state = None
+- solver = saga
+- tol = 0.0001
+- verbose = 0
+- warm_start = False
+
+More on voting classifiers can be found in the following links:
+
+- https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.VotingClassifier.html
+- https://scikit-learn.org/stable/modules/ensemble.html#voting-classifier
+
+## Pipeline Comparison
+When comparing both pipelines together, AutoML seems to have the advantage due to:
+
+- Less steps taken to find the best model (Simpler architecture)
+- Achieved better accuracy
+
+I think the main advantage of automl compared to hyperdrive is the ability of automl to test different algorithms easily. We might think that the model chosen was the best for this problem and try to optimize the hyperparameters using hyperdrive. However, there might be a model we haven't tested that might perform better than the model we chose, which is what happened in this project. 
+
+## Future work
+
+The main area of improvement is to take the voting ensemble algorithm from the AutoML run and tune the hyper parameters using Hyperdrive. AutoML uses Bayesian Optimization to choose the best hyper parameters. It would be beneficial to use hyperdrive and try different parameter sampling methods including random and grid parameter sampling. These methods might detect a different set of hyper parameters that give a better accuracy than those chosen by AutoML.
+
+We know that the bank is particularly interested in accurately identifying clients that are more willing to subscribe. Additionally, identifying someone that is not willing to subscribe to the bank’s deposit as someone who does would be detrimental to the bank as it will be a waste of resources. Therefore, a model's ability to precisely predict those who are willing to donate is more important than the model's ability to recall those individuals. Thus, we can use F-beta score as a metric that considers both precision and recall: 
+
+![f-beta score](https://github.com/adhamalhossary/optimizing-a-machine-learning-pipeline-in-azure/blob/main/f-beta%20score.svg)
+
+
+
 # Optimizing an ML Pipeline in Azure
 
 ## Overview
