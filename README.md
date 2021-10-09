@@ -100,7 +100,7 @@ More on voting classifiers can be found in the following links:
 
 <p>Both the approaches - Logistics + Hyperdrive and AutoML follow similar data processing steps and the difference lies in their configuration details. In the first approach our ML model is fixed and we use hyperdrive tool to find optimal hyperparametets while in second approach different models are automatic generated with their own optimal hyperparameter values and the best model is selected. In the below image, we see that the hyperdrive approach took overall <b>7m 37s</b> and the best model had an accuracy of <b>~0.9179</b> and the automl approach took overall <b>20m 40s</b> and the best model had an acccuracy of <b>~0.91642</b>.
 </p>
-<img src = 'https://github.com/daiversity-io/udacity-azure-ml-engineer-project-1/blob/7c8266e76c6bc1874c1016117340002914d6b1fc/images/Screen%20Shot%202021-10-09%20at%209.07.14%20AM.png>
+<img src = 'https://github.com/daiversity-io/udacity-azure-ml-engineer-project-1/blob/7c8266e76c6bc1874c1016117340002914d6b1fc/images/Screen%20Shot%202021-10-09%20at%209.07.14%20AM.png'>
 
 ## Future work
 
