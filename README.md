@@ -104,13 +104,10 @@ More on voting classifiers can be found in the following links:
 
 ## Future work
 
-The main area of improvement is to take the voting ensemble algorithm from the AutoML run and tune the hyper parameters using Hyperdrive. AutoML uses Bayesian Optimization to choose the best hyper parameters. It would be beneficial to use hyperdrive and try different parameter sampling methods including random and grid parameter sampling. These methods might detect a different set of hyper parameters that give a better accuracy than those chosen by AutoML.
-
-We know that the bank is particularly interested in accurately identifying clients that are more willing to subscribe. Additionally, identifying someone that is not willing to subscribe to the bank’s deposit as someone who does would be detrimental to the bank as it will be a waste of resources. Therefore, a model's ability to precisely predict those who are willing to donate is more important than the model's ability to recall those individuals. Thus, we can use F-beta score as a metric that considers both precision and recall: 
-
-![f-beta score](https://github.com/adhamalhossary/optimizing-a-machine-learning-pipeline-in-azure/blob/main/f-beta%20score.svg)
-
-Using a beta of 0.5 will place more emphasis on precision. We would then use the F-beta score instead of accuracy to test both the hyperdrive to see which hyper parameters give the best f-beta score, and which model from AutoML would as well.
+<ul>
+ <li>To check or measure the fairness of the models</li>
+ <li>Leverage additional interactive visualizations to assess which groups of users might be negatively impacted by a model and compare multiple models in terms of their              fairness and performance</li>
+</ul>
 
 ## Proof of cluster clean up
 <img src= 'https://github.com/daiversity-io/udacity-azure-ml-engineer-project-1/blob/7c8266e76c6bc1874c1016117340002914d6b1fc/images/Screen%20Shot%202021-10-09%20at%209.09.04%20AM.png'>
